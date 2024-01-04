@@ -1,4 +1,3 @@
-import category from "@/sanity/schemas/category"
 import { client } from "../lib/sanity";
 import { simplifiedProduct } from "../interface";
 import Image from "next/image";
@@ -16,6 +15,7 @@ async function getData(category: string){
     const data = await client.fetch(query);
     return data;
 }
+export const dynamic ='force-dynamic';
 
 export default async function page({params}: {params: {category: string}}) {
     const data: simplifiedProduct[] = await getData(params.category)

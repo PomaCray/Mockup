@@ -24,7 +24,7 @@ export default function CheckoutNow({ currency, description, image, price, name,
         
     };
   return (
-    <Button
+    <Button variant={"secondary"}
      onClick={() => {
         buyNow(product.price_id)
      }}
