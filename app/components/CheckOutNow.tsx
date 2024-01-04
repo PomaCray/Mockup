@@ -29,7 +29,7 @@ export default function CheckoutNow({ currency, description, image, price, name,
         buyNow(product.price_id)
      }}
     >
-        Add to Cart
+        Check out Now
     </Button>
   )
 }
